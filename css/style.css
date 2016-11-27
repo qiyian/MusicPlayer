@@ -1,0 +1,247 @@
+*{
+	margin:0;
+	padding:0;
+}
+ul,li{
+	list-style: none;
+}
+
+html,body{
+	width:100%;
+	height:100%;
+	background:-webkit-gradient(linear,left top,right top,from(#6800b9),to(#cf03ba));
+}
+#container{
+	width:100%;
+	height:100%;
+}
+#music-main{
+	height:60%;
+	width:80%;
+	margin:0 auto;
+	padding-top:10%;
+	position: relative;
+}
+#music-pic{
+	width:374px;
+	height:374px;
+	float:left;
+	background:url(../img/cd.png) no-repeat;
+	border-radius:50%;
+	-webkit-animation: revolve 10s infinite linear;
+	-webkit-animation-play-state: running;
+}
+@-webkit-keyframes revolve{
+	0%{
+		-webkit-transform: rotate(0deg);
+	}
+	100%{
+		-webkit-transform: rotate(360deg);
+	}
+}
+#line{
+	height:229px;
+	width:77px;
+	background:url(../img/cd_tou.png) no-repeat;
+	position: absolute;
+	top:100px;
+	left:350px;
+	transform-origin: top right;
+	transform: rotate(10deg);
+	/*-webkit-animation: line-revolve 2s infinite linear alternate;
+	-webkit-animation-play-state: running;*/
+}
+
+/*@-webkit-keyframes line-revolve{
+	0%{
+		-webkit-transform: rotate(0deg);
+	}
+	100%{
+		-webkit-transform: rotate(10deg);
+	}
+}*/
+
+#music-pic #img{
+	width:200px;
+	height:200px;
+	background:url(../img/img.jpg) no-repeat;
+	border-radius:50%;
+	background-size: 100%;
+	transform: translateX(40%) translateY(40%);
+}
+#music-menu{
+	width:60%;
+	height:100%;
+	float:left;
+	position:absolute;
+	left:400px;
+}
+#music-menu div{
+	width:60%;
+	height:100%;
+	float:left;
+}
+#music-menu h2{
+	width:238px;
+	height:58px;
+	position:absolute;
+	top:100px;
+	left:250px;
+	color:#fff;
+	font-size:58px;
+	line-height:58px;
+	text-align:center;
+}
+#music-menu span{
+	display: block;
+	width:74px;
+	height:24px;
+	font-size: 24px;
+	color:#fff;
+	position:absolute;
+	top:200px;
+	left:190px;
+}
+#music-menu i{
+	display: block;
+	font-style: normal;
+	width:150px;
+	height:18px;
+	position:absolute;
+	top:125px;
+	left:150px;
+	font-size: 18px;
+	color:#fff;
+	margin:80px 200px;
+}
+#music-menu #panel{
+	position: absolute;
+	top:300px;
+	left:170px;
+}
+#music-menu #panel input{
+	border:0;
+	width:28px;
+	height:20px;
+}
+#music-menu #panel input:nth-child(n+4){
+	position:relative;
+	left:120px;
+}
+#music-menu #panel #bt-pre{
+	background: url(../img/pre.png) no-repeat center;
+}
+#music-menu #panel #bt-pause{
+	background: url(../img/run.png) no-repeat center;
+}
+#music-menu #panel #bt-next{
+	background: url(../img/next.png) no-repeat center;
+}
+#music-menu #panel #bt-shuffle{
+	background: url(../img/shuffle.png) no-repeat center;
+}
+#music-menu #panel #bt-refresh{
+	background: url(../img/refresh.png) no-repeat center;
+}
+#music-menu #panel #bt-sub,
+#music-menu #panel #bt-add{
+	color:#fff;
+	width:20px;
+	height:20px;
+	position: relative;
+	top:-5px;
+	left:118px;
+	background: transparent;
+}
+#music-menu #panel #bt-volumn{
+	margin:0 -10px;
+	background: url(../img/v1.png) no-repeat center;
+}
+
+#music-menu #curr-time{
+	width:35px;
+	height:10px;
+	color:#fff;
+	position: relative;
+	left:120px;
+	top:350px;
+}
+#music-menu .tiao{
+	width:2px;
+	height:10px;
+	color:#fff;
+	position: relative;
+	left:125px;
+	top:355px;
+	text-align: center;
+	line-height:10px;
+}
+#music-menu #total-time{
+	width:30px;
+	height:10px;
+	color:#fff;
+	position: relative;
+	left:130px;
+	top:350px;
+}
+#music-menu #total-jindu{
+	width:328px;
+	height:5px;
+	background: #ccc;
+	border-radius: 5px;
+	opacity: .5;
+	position: relative;
+	left:210px;
+	top:345px;
+}
+#music-menu #curr-jindu{
+	width:0px;
+	height:5px;
+	background: #fff;
+	border-radius: 5px;
+	opacity: 1;
+
+}
+#menu-title1{
+	display: block;
+}
+#menu-title2,#menu-title3,#menu-title4{
+	display: none;
+}
+#music-menu audio{
+	position:absolute;
+	top:400px;
+	left:520px;
+	opacity: .6;
+}
+#music-list{
+	height:86px;
+	width:1000px;
+	list-style: none;
+	position:absolute;
+	top:600px;
+	left:150px;
+}
+#music-list li{
+	background: #fff;
+	border-radius: 20px/12px;
+	opacity: .5;
+	float:left;
+	margin-right:5%;
+	width:15%;
+	height:100%;
+	text-align:center;
+	color:#999;
+	cursor: pointer;
+}
+#music-list li h3{
+	font-size: 30px;
+	line-height:50px;
+}
+#music-list li span{
+	font-size: 14px;
+}
+#music-list li i{
+	font-style: normal;
+	font-size: 12px;
+}
